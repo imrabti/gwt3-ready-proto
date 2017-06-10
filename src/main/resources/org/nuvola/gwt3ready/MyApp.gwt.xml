@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="MyApp">
+    <inherits name="elemental.Elemental"/>
+    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    <inherits name='com.google.common.base.Base'/>
+    <inherits name='com.google.common.collect.Collect'/>
+
+    <source path="client"/>
+    <source path="shared"/>
+
+    <set-configuration-property name="CssResource.enableGss" value="true" />
+    <set-configuration-property name="gwtp.bootstrapper" value="org.nuvola.gwt3ready.client.MyBootstrapperImpl"/>
+
+    <extend-configuration-property name="gin.ginjector.modules" value="org.nuvola.gwt3ready.client.MyModule"/>
+</module>
