@@ -15,6 +15,8 @@
     </parent>
 
     <properties>
+        <staticResourcesDirectory>${project.build.outputDirectory}/static</staticResourcesDirectory>
+
         <elemento.version>0.2.15</elemento.version>
         <guava.version>21.0</guava.version>
         <gwt.version>2.8.1</gwt.version>
@@ -164,6 +166,7 @@
                     <optimize>${gwt.optimize}</optimize>
                     <style>${gwt.style}</style>
                     <sourceLevel>${maven.compiler.target}</sourceLevel>
+                    <outputDirectory>${staticResourcesDirectory}</outputDirectory>
                 </configuration>
             </plugin>
 

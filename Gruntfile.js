@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         config: {
             version: '1.0.0',
             bower: 'bower_components',
-            public: 'src/main/webapp/static',
+            public: 'src/main/resources/static',
             less: 'src/main/less'
         },
 
@@ -19,9 +19,7 @@ module.exports = function (grunt) {
                 '<%= config.public %>/fonts/**',
                 '<%= config.public %>/img/**',
                 '<%= config.public %>/js/*.js',
-                '<%= config.public %>/js/*.swf',
-                '!<%= config.public %>/js/mode-logfile.js',
-                '!<%= config.public %>/js/theme-logfile.js'
+                '<%= config.public %>/js/*.swf'
             ]
         },
 
