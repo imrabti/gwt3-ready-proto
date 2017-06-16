@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module rename-to="MyApp">
     <inherits name="elemental.Elemental"/>
+    <inherits name="org.jboss.gwt.elemento.Core"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
     <inherits name='com.google.common.base.Base'/>
     <inherits name='com.google.common.collect.Collect'/>

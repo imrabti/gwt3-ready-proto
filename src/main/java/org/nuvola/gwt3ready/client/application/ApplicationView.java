@@ -1,17 +1,8 @@
 package org.nuvola.gwt3ready.client.application;
 
-import javax.inject.Inject;
+import org.nuvola.gwt3ready.client.application.ApplicationPresenter.MyView;
 
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
-    interface Binder extends UiBinder<Widget, ApplicationView> {
-    }
-
-    @Inject
-    ApplicationView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-    }
+public class ApplicationView extends ViewImpl implements MyView {
 }
